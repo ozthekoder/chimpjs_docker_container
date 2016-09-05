@@ -8,3 +8,9 @@ RUN ln -s /usr/bin/xvfb-chromium /usr/bin/chromium-browser
 RUN curl -sL https://deb.nodesource.com/setup_6.x | bash -
 RUN apt-get install -y nodejs && npm install -g npm@latest
 
+WORKDIR /usr/src/app
+ONBUILD COPY package.json /usr/src/app/package.json
+ONBUILD RUN npm install
+ONBUILD COPY . /usr/src/app
+
+CMD npm test

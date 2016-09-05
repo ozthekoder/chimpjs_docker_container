@@ -1,0 +1,22 @@
+{
+  "name": "chimpjs_docker_container",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./node_modules/chimp/bin/chimp.js chimp.config.js --mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ozthekoder/chimpjs_docker_container.git"
+  },
+  "author": "Osman Ozdemir",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ozthekoder/chimpjs_docker_container/issues"
+  },
+  "homepage": "https://github.com/ozthekoder/chimpjs_docker_container#readme",
+  "devDependencies": {
+    "chimp": "^0.40.4"
+  }
+}
