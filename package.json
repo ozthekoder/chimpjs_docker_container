@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node ./node_modules/chimp/bin/chimp.js chimp.config.js --mocha"
+    "test": "node ./node_modules/chimp/bin/chimp.js chimp.config.js --mocha",
+    "chimp-headless": "chimp chimp.config.js --debug"
   },
   "repository": {
     "type": "git",
