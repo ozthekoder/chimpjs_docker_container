@@ -19,4 +19,16 @@ module.exports = {
       }
     }
   },
+
+  seleniumStandaloneOptions: {
+    version: '2.53.1',
+    //baseURL: 'http://artifactory.es.ad.adp.com:8081/artifactory/selenium/',
+    drivers: {
+      chrome: {
+        version: '2.22',
+        arch: process.arch,
+        //baseURL: 'http://artifactory.es.ad.adp.com:8081/artifactory/chromedriver/'
+      },
+    }
+  },
 };
