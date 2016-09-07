@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "node ./node_modules/chimp/bin/chimp.js chimp.config.js --mocha",
-    "chimp-headless": "chimp chimp.config.js --debug"
+    "chimp-headless": "xvfb-run chimp chimp.config.js --debug --log=verbose"
   },
   "repository": {
     "type": "git",

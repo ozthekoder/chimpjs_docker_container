@@ -22,12 +22,12 @@ module.exports = {
 
   seleniumStandaloneOptions: {
     version: '2.53.1',
-    //baseURL: 'http://artifactory.es.ad.adp.com:8081/artifactory/selenium/',
+    baseURL: 'https://selenium-release.storage.googleapis.com',
     drivers: {
       chrome: {
-        version: '2.22',
+        version: '2.23',
         arch: process.arch,
-        //baseURL: 'http://artifactory.es.ad.adp.com:8081/artifactory/chromedriver/'
+        baseURL: 'https://chromedriver.storage.googleapis.com'
       },
     }
   },
