@@ -2,13 +2,16 @@ module.exports = {
   path: './spec/',
   chai: true,
   mocha: true,
-  mochaTimeout: 200000,
+  mochaTimeout: 60000,
   browser: 'chrome',
   screenshotsOnError: true,
   // - - - - WEBDRIVER-IO  - - - -
   webdriverio: {
     maxInstances: 1,
     desiredCapabilities: {
+      chromeOptions: {
+        args: ['--no-sandbox']
+      },
       perfLoggingPrefs: {
         enableNetwork: true,
         traceCategories: 'v8,blink.console,devtools.timeline,disabled-by-default-devtools.timeline'
